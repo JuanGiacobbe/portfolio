@@ -1,0 +1,25 @@
+.home {
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #404447;
+}
+
+
+.text{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #0d0240;
+}
+
+.text .name{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color:#fff;
+}
+
+.text span{
+    text-transform: lowercase;
+}

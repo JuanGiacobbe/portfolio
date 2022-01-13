@@ -34,6 +34,7 @@
     padding: 10px;
     text-decoration: none;
     transition: all .2s ease;
+    overflow-y: hidden;
 }
 
 .list li a:hover,
