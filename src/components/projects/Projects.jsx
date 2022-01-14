@@ -1,9 +1,19 @@
 import React from 'react';
+import './projects.css';
+import ProjectCard from './ProjectCard';
+
 
 function Projects() {
     return (
-        <p>hola</p>
+        <section className='projects' id='projects'>
+            <h2 className='title'>my projects</h2>
 
+            <div className='row'>
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+            </div>
+        </section>
     );
 }
 

@@ -1,0 +1,36 @@
+.project-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 28vw;
+    height: 75vh;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.pro-img {
+    margin: 20px 0 20px 0;
+    height: 30vh;
+    width: 90%;
+    border: 2px solid white;
+}
+
+.pro-title {
+    font-size: 1.7rem;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.pro-des {
+    font-size: 1.2rem;
+    height: 20vh;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.pro-link {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}

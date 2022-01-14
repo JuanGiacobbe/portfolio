@@ -1,5 +1,5 @@
 .home {
-    height: calc(100vh - 70px);
+    height: calc(101vh - 70px);
     width: 100%;
     display: flex;
     justify-content: space-around;
