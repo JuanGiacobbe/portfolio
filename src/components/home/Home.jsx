@@ -7,9 +7,11 @@ function Home() {
         <section className="home" id="home">
             <div className="col">
                 <div className='text'>
-                    <h2>hello, my name <span>is</span></h2>
-                    <h2 className='name'>juan giacobbe</h2>
-                    <h2>developer</h2>
+                    <h2>hi,</h2>
+                    <h2>i'm <span className='name'>j</span>uan</h2>
+                    <h2>web developer.</h2>
+
+                    <button className='btn'>contact me</button>
                 </div>
             </div>
 

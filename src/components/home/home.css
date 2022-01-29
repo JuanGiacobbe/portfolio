@@ -1,25 +1,47 @@
 .home {
-    height: calc(101vh - 70px);
-    width: 100%;
+    height: calc(100vh);
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #404447;
+    background-image: linear-gradient(to bottom, #212120, #1f1f1e);
 }
 
 
 .text{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     text-transform: capitalize;
-    color: #0d0240;
+    color: #fff;
+    font-weight: 700;
 }
 
 .text .name{
-    font-size: 3.5rem;
-    font-weight: 900;
-    color:#fff;
+    color:#033d99;
+    font-size: 4rem;
 }
 
-.text span{
-    text-transform: lowercase;
+.btn {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 20px;
+    padding: 4px;
+    width: 35%;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #54e37c;
+    color: #54e37c;
+    cursor: pointer;
 }
+
+.btn:hover {
+    color: #fff;
+    background-color: #54e37c;
+    transition: all .2s ease;
+}
+
+
+
