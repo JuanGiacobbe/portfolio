@@ -1,0 +1,29 @@
+.about {
+    height: 100vh;
+    background: linear-gradient(to bottom, #1f1f1e, #3e423f);
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.about-col {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px;
+}
+
+.about-text {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.about-title {
+    /* font-size: 1.3rem; */
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}

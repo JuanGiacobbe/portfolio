@@ -1,10 +1,12 @@
 .projects {
-    height: calc(150vh - 70px);
+    font-family: 'Poppins', sans-serif;
+    height: 150vh;
     width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: red;
+    padding-top: 90px;
+    background: linear-gradient(to bottom, #3e423f, #717572);
 }
 
 .title {
@@ -21,5 +23,5 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    width: 90vw;
+    width: 100%;
 }

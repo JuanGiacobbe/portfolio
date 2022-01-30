@@ -7,7 +7,7 @@ const Navbar = () => {
             <a href='#home' className='brand'>jg.</a>
 
             <ul className='list'>
-                <li><a href='#home' class='link'>home</a></li>
+                <li><a href='#about' class='link'>about me</a></li>
                 <li><a href='#projects' class='link'>projects</a></li>
                 <li><a href='#skills' class='link'>skills</a></li>
                 <li><a href='#contact' class='link'>contact me</a></li>
