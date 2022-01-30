@@ -10,8 +10,18 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #151a21;
 }
 
+
+.title {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
 
 

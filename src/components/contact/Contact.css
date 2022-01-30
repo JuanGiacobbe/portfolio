@@ -1,0 +1,17 @@
+.contact {
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.contact-title {
+    padding-bottom: 15px;
+}
+
+.icon {
+    margin: 0 10px;
+}

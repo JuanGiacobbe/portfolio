@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    background: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 30vw;
+}
+
+.msg {
+    height: 20vh;
+}
+
+.submit {
+    font-size: 1.2rem;
+    color: #fff;
+    background: none;
+    width: 9vw;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.submit:hover {
+    background-color: #fff;
+    color: #151a21;
+}

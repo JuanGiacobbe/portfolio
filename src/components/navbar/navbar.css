@@ -7,19 +7,27 @@ a {
 }
 
 .navbar {
+    font-family: 'Roboto', sans-serif;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: #212120;
     width: 100%;
     height: 70px;
+    transition: all .6s ease;
+    color: #fff;
+}
+.navbar.sticky {
+    color: #000;
+    background-color: #fff;
+    height: 80px;
 }
 
 .brand {
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 20px;
     color: #fff;
@@ -43,4 +51,8 @@ a {
 .link:hover,
 .brand:hover {
     font-weight: 700;
+}
+.brand.color,
+.link.color {
+    color: #000;
 }
