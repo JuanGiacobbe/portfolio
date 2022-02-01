@@ -8,10 +8,31 @@
     font-size: 1.2rem;
 }
 
+.contact-col {
+    width: 30%;
+}
+
 .contact-title {
     padding-bottom: 15px;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
 .icon {
     margin: 0 10px;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
 }
+
+.icon:hover {
+    background-color: #fff;
+    color: #151a21;
+}
+
