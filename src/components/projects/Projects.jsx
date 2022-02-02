@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 function Projects() {
     return (
         <section className='projects' id='projects'>
-            <h2 className='title'>my projects</h2>
+            <h2 className='title'>my recent work</h2>
 
             <div className='row'>
                 <ProjectCard />

@@ -8,7 +8,7 @@ export default function ProjectCard() {
             <img alt='img' className='pro-img' />
             <p className='pro-title'>hola</p>
             <p className='pro-des'>lorem lorem lorem lorem
-            loremloremloremlorem
+            lorem lorem lorem lorem
             loremlorem</p>
             <button className="pro-link">view on github</button>
         </div>

@@ -53,6 +53,40 @@ a {
     font-weight: 700;
 }
 .brand.color,
-.link.color {
+.link.color,
+.hamburger.color {
     color: #000;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .list {
+        position: absolute;
+        flex-direction: column;
+        height: auto;
+        top: 80px;
+        left: -110%;
+    }
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+    }
+    .active {
+        width: 100%;
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
 }

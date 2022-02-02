@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
@@ -24,16 +26,19 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor);
 
     return(
-        <nav className={navbar ? 'navbar sticky' : 'navbar'}>
-            <a href='#home' className={link ? 'brand color' : 'brand'}>jg.</a>
+        <nav className={`navbar ? ${navbar ? 'sticky' : ''}`}>
+            <a href='#home' className={`brand ? ${link ? 'color' : ''}`}>jg.</a>
 
             <ul className='list'>
-                <li><a href='#about' className={link ? 'link color' : 'link'}>about me</a></li>
-                <li><a href='#projects' className={link ? 'link color' : 'link'}>projects</a></li>
-                <li><a href='#skills' className={link ? 'link color' : 'link'}>skills</a></li>
-                <li><a href='#contact' className={link ? 'link color' : 'link'}>contact me</a></li>
-
+                <li><a href='#about' className={`link ? ${link ? 'color' : ''}`}>about me</a></li>
+                <li><a href='#projects' className={`link ? ${link ? 'color' : ''}`}>projects</a></li>
+                <li><a href='#skills' className={`link ? ${link ? 'color' : ''}`}>skills</a></li>
+                <li><a href='#contact' className={`link ? ${link ? 'color' : ''}`}>contact me</a></li>
             </ul>
+
+            <>
+                <FontAwesomeIcon className={`hamburger ? ${link ? 'color' : ''}`} icon={faBars} />
+            </>
         </nav>
         );
 }
