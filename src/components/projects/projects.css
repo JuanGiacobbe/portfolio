@@ -3,14 +3,13 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding-top: 90px;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 100%;
+.pro-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 80%;
 }

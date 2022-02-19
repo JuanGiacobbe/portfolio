@@ -1,44 +1,46 @@
 .project-card {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    width: 28%;
-    height: 75vh;
-    background: #f5ba9f;
-    color: #000;
-    margin-top: 30px;
+    background: var(--rose);
+    margin: 30px 3%;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
 }
 
 
 .pro-img {
-    height: 35%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
     cursor: pointer;
 }
 
 .pro-title {
     font-size: 1.5rem;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     text-transform: capitalize;
 }
 
 .pro-des {
     font-size: 1.2rem;
-    width: 90%;
-    height: 40%;
     margin-bottom: 10px;
 }
 
 .pro-link {
     width: 50%;
-    padding: 3px;
+    padding: 5px;
     text-transform: capitalize;
     font-size: 1.2rem;
-    cursor: pointer;
-    background: none;
-    border: 1px solid #717572;
+    background-color: var(--btn);
+    color: var(--white);
+    border: none;
     border-radius: 5px;
+    transition:  all .3s ease;
+    cursor: pointer;
+}
+
+.pro-link:hover {
+    background-color: var(--btn-hover);
 }
 
 

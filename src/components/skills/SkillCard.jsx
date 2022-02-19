@@ -1,7 +1,7 @@
 import React from 'react';
 import './SkillCard.css';
 
-function SkillCard() {
+export default function SkillCard() {
     return (
         <div className="card">
             <p className='skill'>html</p>
@@ -10,4 +10,3 @@ function SkillCard() {
     );
 }
 
-export default SkillCard;

@@ -3,17 +3,20 @@
     padding-top: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    color: #fff;
+    color: var(--white);
     font-size: 1.2rem;
 }
 
-.contact-col {
-    width: 30%;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
 }
 
 .contact-title {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .icons {
@@ -31,8 +34,4 @@
     transition: all .3s ease;
 }
 
-.icon:hover {
-    background-color: #fff;
-    color: #151a21;
-}
 

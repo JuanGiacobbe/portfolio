@@ -3,19 +3,24 @@ import './Skills.css';
 import SkillCard from './SkillCard';
 
 
-function Skills() {
+export default function Skills() {
     return (
-        <div className='skills' id='skills'>
-            <h2 className='title'>skills</h2>
-            <p className='skill-des'>sasdakdsñlaskdñlaksdñlasdkñasdk</p>
+        <section className='skills' id='skills'>
+            <h2 className='section-title'>skills</h2>
+            <p className='section-des'>sasdakdsñlaskdñlaksdñlasdkñasdk</p>
 
-            <div className='skill-row'>
+            <div className='skill-grid'>
                 <SkillCard />
                 <SkillCard />
                 <SkillCard />
+                <SkillCard />
+                <SkillCard />
+                <SkillCard />
+                <SkillCard />
+                <SkillCard />
+
             </div>
-        </div>
+        </section>
     );
 }
 
-export default Skills;
