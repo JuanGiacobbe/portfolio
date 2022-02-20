@@ -10,7 +10,7 @@ export default function ProjectCard() {
             <p className='pro-des'>lorem lorem lorem lorem
             lorem lorem lorem lorem
             loremlorem</p>
-            <button className="pro-link">view on github</button>
+            <button className="pro-link"><span className='capitalize'>v</span>iew on github</button>
         </div>
     );
 }

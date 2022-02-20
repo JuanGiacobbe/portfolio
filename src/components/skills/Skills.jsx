@@ -6,8 +6,9 @@ import SkillCard from './SkillCard';
 export default function Skills() {
     return (
         <section className='skills' id='skills'>
-            <h2 className='section-title'>skills</h2>
-            <p className='section-des'>sasdakdsñlaskdñlaksdñlasdkñasdk</p>
+            <h2 className='section-title'><span className='capitalize'>s</span>kills</h2>
+            <p className='section-des'>here I show you my set of skills; 
+            this page is completely built with these technologies!</p>
 
             <div className='skill-grid'>
                 <SkillCard />

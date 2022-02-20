@@ -11,13 +11,13 @@ export default function Contact() {
         <div className='contact' id="contact">
             <div className='contact-grid'>
                 <div className='contact-container'>
-                    <h2 className='contact-title'>get in touch.</h2>
-                    <p className='contact-info'>you can leave a message in the
+                    <h2 className='section-sub'>get in touch.</h2>
+                    <p className='subsection-des'>you can leave a message in the
                     form in rigth; or you can contact me in my social media in
                     Github and Instagram clicking in the icons bellow.  </p>
 
                     <div className='icons'>
-                        <FontAwesomeIcon  className='icon' icon={faInstagram} />
+                        <a><FontAwesomeIcon  className='icon' icon={faInstagram} /></a>
                         <FontAwesomeIcon className='icon' icon={faGithub} />
                     </div>
                 </div>

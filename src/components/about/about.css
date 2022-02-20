@@ -2,29 +2,24 @@
     height: 100vh;
     padding-top: 90px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
 }
 
-.about-col1 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+}
+
+.about-content {
+    display: inline-block;
     padding: 40px;
 }
 
-.about-col2 {
-    width: 30%;
-}
 
-.about-text {
-    color: #fff;
-    font-size: 1.2rem;
-}
-
-.about-title {
-    font-weight: 700;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+.about-img {
+    width: 100%;
+    padding: 40px;
 }

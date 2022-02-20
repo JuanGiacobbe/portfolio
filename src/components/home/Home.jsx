@@ -8,7 +8,7 @@ function Home() {
             <div className="col">
                 <div className='text'>
                     <h2>hi,</h2>
-                    <h2>i'm <span className='name'>j</span>uan</h2>
+                    <h2>i'm <span className='initial'>j</span>uan</h2>
                     <h2>web developer.</h2>
 
                     <button className='btn'>contact me</button>

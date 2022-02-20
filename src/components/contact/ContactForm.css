@@ -6,27 +6,50 @@
 }
 
 .input {
+    font-family: var(--title);
     background: none;
+    width: 20vw;
     padding: 10px;
-    margin: 10px;
+    margin: 7px;
     border: 1px solid var(--white);
     border-radius: 5px;
     color: var(--white);
     font-size: 1.2rem;
-    width: 30vw;
+    transition: all .7s ease;
 }
 
+.name-active {
+    width: 25vw;
+    border: 2px solid var(--rose);
+}
+
+.mail-active {
+    width: 30vw;
+    border: 2px solid var(--rose);
+}
+
+
 .msg {
-    height: 20vh;
+    min-width: 20vw;
+    max-width: 30vw;
+    max-height: 40vh;
+    min-height: 20vh;
+    background: none;
+    padding: 10px;
+    margin: 7px;
+    border: 2px solid var(--rose);
+    border-radius: 5px;
+    color: var(--white);
+    font-family: var(--title);
+    font-size: 1.2rem;
 }
 
 .submit {
     font-size: 1.2rem;
     color: var(--white);
     background: none;
-    width: 9vw;
     margin-top: 10px;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     border: 1px solid var(--white);
     cursor: pointer;
@@ -34,6 +57,6 @@
 }
 
 .submit:hover {
-    background-color: var(--white);
+    background-color: var(--lightblue);
     color: var(--background);
 }

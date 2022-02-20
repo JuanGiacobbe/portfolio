@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 
 :root {
+    --title: 'Outfit', sans-serif;
+    --descrip: 'Poppins', sans-serif;
+
     --background: #151a21;
-    --white: #fff;
+    --white: #f6f4f3;
     --black: #000;
-    --rose: #f5ba9f;
+    --red:  #f03a47;
+    --rose: #af5b5b;
+    --grey:  #d6d9ce;
+    --lightblue: #c9ddff;
     --btn: #5479e8;
     --btn-hover: #033d99;
 }
@@ -20,20 +28,49 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--descrip);
     background-color: var(--background);
 }
 
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 
-.section-title {
-    font-size: 2.5rem;
-    color: var(--white);
-    font-weight: 600;
-    margin-bottom: 10px;
+
+.capitalize {
     text-transform: capitalize;
 }
 
+.section-title {
+    font-family: var(--title);
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
 .section-des {
+    font-family: var(--descrip);
     font-size: 1.1rem;
     padding: 5px 0 30px;
+    color: var(--white);
+    width: 60%;
+    text-align: center;
+}
+
+.section-sub {
+    color: var(--white);
+    font-family: var(--descrip);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.subsection-des {
+    font-family: var(--descrip);
+    color: var(--white);
+    font-size: 1.1rem;
 }
