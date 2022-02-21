@@ -5,10 +5,13 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 90px;
+    width: 100vw;
 }
 
-.skill-grid {
-    display:  grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    width: 50%;
+.skills-container {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }

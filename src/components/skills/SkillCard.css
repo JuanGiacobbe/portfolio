@@ -1,13 +1,52 @@
-.card {
+.skill-grid {
+    display:  grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 50vw;
+}
+
+.skills-box {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 0 20%;
+    padding: 25px;
 }
 
 
-.skill {
-    border: 1px solid #fff;
-    padding: 25px;
-    margin-bottom: 5px;
+.skills-icon {
+    color: var(--rose);
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+.skills-icon:hover {
+    transform: scale(1.2);
+}
+.html:hover {
+    color: #e08134;
+}
+.js:hover {
+    color: #e3e334;
+}
+.css:hover {
+    color: var(--btn);
+}
+.node:hover {
+    color: #2bcf19;
+}
+.react:hover {
+    color: var(--btn);
+}
+.git:hover {
+    color: var(--red);
+}
+
+
+
+
+.skills-box p {
+    padding: 5px;
+    font-size: 1.1rem;
+    font-family: var(--descrip);
+    color: var(--white);
 }

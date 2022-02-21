@@ -1,11 +1,67 @@
 import React from 'react';
 import './SkillCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
+import { faCss3 } from "@fortawesome/free-brands-svg-icons";
+import { faJs } from "@fortawesome/free-brands-svg-icons";
+import { faNode } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
+
+
 
 export default function SkillCard() {
+    
+    let data = [
+        {
+            id: 1,
+            icon: faHtml5,
+            text: 'HTML 5',
+            class: 'html',
+        },
+        {
+            id: 2,
+            icon: faCss3,
+            text: 'CSS 3',
+            class: 'css',
+        },
+        {
+            id: 3,
+            icon: faJs,
+            text: 'JavaScript',
+            class: 'js',
+        },
+        {
+            id: 4,
+            icon: faNode,
+            text: 'Node JS',
+            class: 'node',
+        },
+        {
+            id: 5,
+            icon: faReact,
+            text: 'React JS',
+            class: 'react',
+        },
+        {
+            id: 6,
+            icon: faGitAlt,
+            text: 'Git',
+            class: 'git',
+        },
+    ]
+
+
     return (
-        <div className="card">
-            <p className='skill'>html</p>
-            <p className='skill-name'>html</p>
+        <div className="skill-grid">
+            {data.map((item, index) => {
+                return (
+                    <div className='skills-box' key={index}>
+                        <FontAwesomeIcon className={`skills-icon ${item.class}`} icon={item.icon} />
+                        <p>{item.text}</p>
+                    </div>
+                )
+            })}
         </div>
     );
 }
