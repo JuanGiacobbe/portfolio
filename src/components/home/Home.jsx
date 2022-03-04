@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-
+import CTA from './CTA';
 
 function Home() {
     return (
@@ -10,10 +10,10 @@ function Home() {
                     <h2>hi,</h2>
                     <h2>i'm <span className='initial'>j</span>uan</h2>
                     <h2>web developer.</h2>
-
-                    <button className='btn'>contact me</button>
                 </div>
+                <CTA />
             </div>
+
 
             <div className='col'>
                 <img alt='img'/>

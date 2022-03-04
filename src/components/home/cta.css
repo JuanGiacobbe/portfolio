@@ -1,0 +1,26 @@
+.cta {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+}
+
+
+.btn {
+	width: fit-content;
+	color: var(--lightblue);
+	border: 2px solid var(--lightblue);
+	background-color: none;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: .5rem;
+	margin-right: 5%;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.btn:hover {
+	background-color: var(--rose);
+	color: var(--background);
+	border-color: var(--background);
+}
