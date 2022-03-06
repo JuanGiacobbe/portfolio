@@ -46,6 +46,17 @@ a {
 }
 
 
+.btn {
+    width: fit-content;
+    border-radius: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
 .capitalize {
     text-transform: capitalize;
 }

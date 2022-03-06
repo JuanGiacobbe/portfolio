@@ -34,7 +34,7 @@
     max-height: 300px;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
+    border-radius: .25rem;
     width: 90%;
     overflow: hidden;
     cursor: pointer;

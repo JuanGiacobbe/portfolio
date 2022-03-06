@@ -9,11 +9,13 @@ export default function ContactForm() {
     const activeName = () => {
         if(name === false) {
             setName(true);
+            setMail(false);
         }
     }
     const activeMail = () => {
         if(mail === false) {
             setMail(true);
+            setName(false);
         }
     }
 
@@ -22,7 +24,7 @@ export default function ContactForm() {
             <input type='text' className={`input ? ${name ? 'name-active' : ''}`} onClick={activeName} placeholder='your name'/>
             <input type='email' className={`input ? ${mail ? 'mail-active' : ''}`} onClick={activeMail} placeholder='your email'/>
             <textarea type='text' className='msg' placeholder='message'/>
-            <input type='submit' className='submit' value='submit'/>
+            <input type='submit' className='btn submit' value='submit'/>
 
         </form>
     );

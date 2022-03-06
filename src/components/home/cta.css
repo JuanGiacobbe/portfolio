@@ -5,18 +5,11 @@
 }
 
 
-.btn {
-	width: fit-content;
+.home-btn {
 	color: var(--lightblue);
 	border: 2px solid var(--lightblue);
 	background-color: none;
-	border-radius: 10px;
-	font-size: 1.2rem;
-	font-weight: 600;
-	padding: .5rem;
 	margin-right: 5%;
-	cursor: pointer;
-	transition: var(--transition);
 }
 
 .btn:hover {
