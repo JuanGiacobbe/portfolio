@@ -1,5 +1,7 @@
 import React from 'react';
 import './about.css';
+import img2 from '../../assets/img2.png';
+
 
 function About() {
     return (
@@ -13,7 +15,7 @@ function About() {
                 </div>
 
                 <div className='about-img'>
-                    <img alt='juan'/>
+                    <img src={img2} alt='juan'/>
                 </div>
             </div>
         </section>

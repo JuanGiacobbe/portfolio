@@ -1,6 +1,5 @@
 .about {
-    height: 100vh;
-    padding-top: 90px;
+    padding-top: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,17 +8,23 @@
 
 .about-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     width: 80%;
 }
 
 .about-content {
     display: inline-block;
-    padding: 40px;
+    padding: 3rem;
 }
 
 
 .about-img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .25rem;
     width: 100%;
-    padding: 40px;
+    padding: 3rem;
+    overflow: hidden;
 }
