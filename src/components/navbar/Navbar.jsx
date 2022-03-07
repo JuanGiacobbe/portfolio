@@ -1,46 +1,28 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons';
+import {faHome} from '@fortawesome/free-solid-svg-icons';
+import {faUser} from '@fortawesome/free-solid-svg-icons';
+import {faFolder} from '@fortawesome/free-solid-svg-icons';
+import {faTools} from '@fortawesome/free-solid-svg-icons';
+import {faAddressCard} from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Navbar = () => {
-    const [navbar, setNavbar] = useState(false);
-    const [link, setLink] = useState(false);
-
-    const changeBackground = () => {
-        if(window.scrollY >= 80) {
-            setNavbar(true);
-        }else {
-            setNavbar(false);
-        }
-    }
-    window.addEventListener('scroll', changeBackground);
-
-    const changeColor = () => {
-        if(window.scrollY >= 80) {
-            setLink(true);
-        }else {
-            setLink(false);
-        }
-    }
-    window.addEventListener('scroll', changeColor);
+    const [activeLink, setActiveLink] = useState('#home');
 
     return(
-        <nav className={`navbar ? ${navbar ? 'sticky' : ''}`}>
-            <a href='#home' className={`brand ? ${link ? 'color' : ''}`}>jg.</a>
-
+        <nav className='navbar'>
             <ul className='list'>
-                <li><a href='#about' className={`link ? ${link ? 'color' : ''}`}>about me</a></li>
-                <li><a href='#projects' className={`link ? ${link ? 'color' : ''}`}>projects</a></li>
-                <li><a href='#skills' className={`link ? ${link ? 'color' : ''}`}>skills</a></li>
-                <li><a href='#contact' className={`link ? ${link ? 'color' : ''}`}>contact me</a></li>
+                <a href='#home' onClick={()=> setActiveLink('#home')} className={activeLink === '#home' ? 'active' : ''}><FontAwesomeIcon  className='nav-icon' icon={faHome} /></a>
+                <a href='#about' onClick={()=> setActiveLink('#about')} className={activeLink === '#about' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faUser} /></a>
+                <a href='#projects' onClick={()=> setActiveLink('#projects')} className={activeLink === '#projects' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faFolder} /></a>
+                <a href='#skills' onClick={()=> setActiveLink('#skills')} className={activeLink === '#skills' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faTools} /></a>
+                <a href='#contact' onClick={()=> setActiveLink('#contact')} className={activeLink === '#contact' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faAddressCard} /></a>
             </ul>
-
-            <>
-                <FontAwesomeIcon className={`hamburger ? ${link ? 'color' : ''}`} icon={faBars} />
-            </>
         </nav>
-        );
+    );
 }
 
 
