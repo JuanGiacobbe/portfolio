@@ -5,8 +5,8 @@ import './cta.css';
 export default function CTA() {
 	return(
 		<div className='cta'>
-			<a href={CV} className='btn home-btn' download>Download CV</a>
-			<a href='#contact' className='btn home-btn'>Let's talk</a>
+			<a href={CV} className='btn cv-btn' download>Download CV</a>
+			<a href='#contact' className='btn contact-btn'>Let's talk</a>
 		</div>
 	)
 }

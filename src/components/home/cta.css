@@ -5,15 +5,27 @@
 }
 
 
-.home-btn {
+.cv-btn {
+	color: var(--white);
+	border: 2px solid var(--rose);
+	background-color: var(--rose);
+	margin-right: 5%;
+}
+.cv-btn:hover {
+	background-color: var(--background);
+	color: var(--white);
+	border-color: var(--lightblue);
+}
+
+.contact-btn {
 	color: var(--lightblue);
 	border: 2px solid var(--lightblue);
 	background-color: none;
 	margin-right: 5%;
 }
 
-.btn:hover {
+.contact-btn:hover {
 	background-color: var(--rose);
 	color: var(--background);
-	border-color: var(--background);
+	border-color: var(--rose);
 }
