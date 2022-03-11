@@ -1,22 +1,26 @@
+// importing react router
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
+// importing css
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Projects from './components/projects/Projects';
-import Skills from './components/skills/Skills';
-import Contact from './components/contact/Contact';
+
+// importing pages
+import Main from './pages/main/Main';
+import NotFound from './pages/not-found/NotFound';
 
 
 
 function App() {
   return (
     <main className="App">
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Contact/>
+      <BrowserRouter>
+        <Routes>
+
+          <Route path='/' element={<Main />} />
+          <Route path='/*' element={<NotFound />} />
+          
+        </Routes>
+      </BrowserRouter>
     </main>
   );
 }

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// import { NavLink } from 'react-router-dom';
+
 import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHome} from '@fortawesome/free-solid-svg-icons';
@@ -15,11 +17,44 @@ const Navbar = () => {
     return(
         <nav className='navbar'>
             <ul className='list'>
-                <a href='#home' onClick={()=> setActiveLink('#home')} className={activeLink === '#home' ? 'active' : ''}><FontAwesomeIcon  className='nav-icon' icon={faHome} /></a>
-                <a href='#about' onClick={()=> setActiveLink('#about')} className={activeLink === '#about' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faUser} /></a>
-                <a href='#projects' onClick={()=> setActiveLink('#projects')} className={activeLink === '#projects' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faFolder} /></a>
-                <a href='#skills' onClick={()=> setActiveLink('#skills')} className={activeLink === '#skills' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faTools} /></a>
-                <a href='#contact' onClick={()=> setActiveLink('#contact')} className={activeLink === '#contact' ? 'active' : ''}><FontAwesomeIcon className='nav-icon' icon={faAddressCard} /></a>
+                <li>
+                    <a href='#home' onClick={()=> setActiveLink('#home')} className={activeLink === '#home' ? 'active' : ''}
+                    >
+                        <FontAwesomeIcon  className='nav-icon' icon={faHome} />
+                    </a>
+                </li>
+
+                <li>
+                    <a href='#about' onClick={()=> setActiveLink('#about')} className={activeLink === '#about' ? 'active' : ''}
+                    >
+                        <FontAwesomeIcon className='nav-icon' icon={faUser} />
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href='#projects' onClick={()=> setActiveLink('#projects')} className={activeLink === '#projects' ? 'active' : ''}
+                    >
+                        <FontAwesomeIcon className='nav-icon' icon={faFolder} />
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href='#skills' onClick={()=> setActiveLink('#skills')} className={activeLink === '#skills' ? 'active' : ''}
+                    >
+                        <FontAwesomeIcon className='nav-icon' icon={faTools} />
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href='#contact' onClick={()=> setActiveLink('#contact')} className={activeLink === '#contact' ? 'active' : ''}
+                    >
+                        <FontAwesomeIcon className='nav-icon' icon={faAddressCard} />
+                    </a>
+
+                </li>
             </ul>
         </nav>
     );

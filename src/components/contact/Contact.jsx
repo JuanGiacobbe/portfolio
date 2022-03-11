@@ -17,7 +17,7 @@ export default function Contact() {
                     Github and Instagram clicking in the icons bellow.  </p>
 
                     <div className='icons'>
-                        <a><FontAwesomeIcon  className='icon' icon={faInstagram} /></a>
+                        <a href='instagram.com/juan_giacobbe_' target='_blank'><FontAwesomeIcon  className='icon' icon={faInstagram} /></a>
                         <FontAwesomeIcon className='icon' icon={faGithub} />
                     </div>
                 </div>

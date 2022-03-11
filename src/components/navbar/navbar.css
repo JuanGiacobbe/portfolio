@@ -12,6 +12,11 @@
     background-color: var(--navbar-bg);
 }
 
+.navbar .list {
+    display: flex;
+    flex-direction: row;
+}
+
 .navbar a {
     padding: 0 1rem;
     background: transparent;
