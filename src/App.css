@@ -10,8 +10,9 @@
     --background: #151a21;
     --white: #f6f4f3;
     --black: #000;
-    --red:  #f03a47;
-    --rose: #af5b5b;
+    --red:  #323366;
+    --dark-green: #213438;
+    --rose: #EB5B4E;
     --grey:  #d6d9ce;
     --lightblue: #c9ddff;
     --btn: #5479e8;
@@ -91,4 +92,14 @@ a {
     font-family: var(--descrip);
     color: var(--white);
     font-size: 1.1rem;
+}
+
+.icon {
+    margin: 0 .1rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    transition: all .3s ease;
 }

@@ -20,13 +20,6 @@
     font-size: 1.2rem;
 }
 
-.icon {
-    margin: 0 10px;
-    font-size: 2rem;
-    border-radius: 5px;
-    color: var(--white);
-    cursor: pointer;
-    transition: all .3s ease;
-}
+
 
 

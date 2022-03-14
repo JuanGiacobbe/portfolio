@@ -48,13 +48,7 @@ const Navbar = () => {
 
                 </li>
 
-                <li>
-                    <a href='#contact' onClick={()=> setActiveLink('#contact')} className={activeLink === '#contact' ? 'active' : ''}
-                    >
-                        <FontAwesomeIcon className='nav-icon' icon={faAddressCard} />
-                    </a>
 
-                </li>
             </ul>
         </nav>
     );

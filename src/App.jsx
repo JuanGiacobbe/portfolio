@@ -7,6 +7,7 @@ import './App.css';
 // importing pages
 import Main from './pages/main/Main';
 import NotFound from './pages/not-found/NotFound';
+import Landing from './pages/landing/Landing'
 
 
 
@@ -18,6 +19,8 @@ function App() {
 
           <Route path='/' element={<Main />} />
           <Route path='/*' element={<NotFound />} />
+          <Route path='/contact' element={<Landing />} />
+
           
         </Routes>
       </BrowserRouter>
