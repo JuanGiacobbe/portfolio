@@ -1,14 +1,13 @@
 .contact {
     height: 100vh;
-    padding-top: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     width: 80%;
 }
 

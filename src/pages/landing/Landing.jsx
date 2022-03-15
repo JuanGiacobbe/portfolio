@@ -1,9 +1,17 @@
 
+// importing components
+import NavBtns from '../../components/nav-btns/NavBtns' 
 
+// importing styles
+import './landing.css'
 
 export default function Landing() {
 	return(
 
-		<div>landing</div>
+		<div className='landing'>
+
+			<NavBtns />
+
+		</div>
 	)
 }

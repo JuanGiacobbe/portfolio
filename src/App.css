@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-
+/*variables*/
 :root {
     --title: 'Outfit', sans-serif;
     --descrip: 'Poppins', sans-serif;
@@ -21,6 +21,10 @@
 
     --transition: all .3s ease;
 }
+
+
+
+/*general styles*/
 
 
 * {
@@ -48,7 +52,15 @@ a {
 }
 
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .btn {
+    overflow: hidden;
     width: fit-content;
     border-radius: .5rem;
     padding: .5rem;
