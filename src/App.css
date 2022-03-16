@@ -97,7 +97,7 @@ a {
     font-family: var(--descrip);
     font-weight: 700;
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: .5rem;
 }
 
 .subsection-des {

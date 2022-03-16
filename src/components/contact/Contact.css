@@ -1,24 +1,39 @@
 .contact {
     height: 100vh;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2.2rem;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    width: 80%;
+    grid-template-columns: 60% 40%;
 }
 
-.icons {
+.contact-container {
+    width: 95%;
+}
+
+.data-column {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.data-title {
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+.personal-data {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.icons-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    font-size: 1.2rem;
+    flex-direction: column;
+    gap: .2rem;
 }
-
-
-
 
