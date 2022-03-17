@@ -1,17 +1,17 @@
+// importing react
 import React, { useState } from 'react';
-// import { NavLink } from 'react-router-dom';
 
-import './navbar.css';
+// importing font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHome} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-solid-svg-icons';
 import {faFolder} from '@fortawesome/free-solid-svg-icons';
 import {faTools} from '@fortawesome/free-solid-svg-icons';
-import {faAddressCard} from '@fortawesome/free-solid-svg-icons';
 
+// importing styles
+import './navbar.css';
 
-
-const Navbar = () => {
+export default function Navbar() {
     const [activeLink, setActiveLink] = useState('#home');
 
     return(
@@ -56,4 +56,3 @@ const Navbar = () => {
 
 
 
-export default Navbar;

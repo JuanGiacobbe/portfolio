@@ -1,5 +1,4 @@
-import React from 'react';
-import './SkillCard.css';
+// importing font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3 } from "@fortawesome/free-brands-svg-icons";
@@ -8,7 +7,8 @@ import { faNode } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 
-
+// importing styles
+import './SkillCard.css';
 
 export default function SkillCard() {
     
@@ -56,7 +56,7 @@ export default function SkillCard() {
         <div className="skill-grid">
             {data.map((item, index) => {
                 return (
-                    <div className='skills-box' key={index}>
+                    <div className='skills-box container' key={index}>
                         <FontAwesomeIcon className={`skills-icon ${item.class}`} icon={item.icon} />
                         <p>{item.text}</p>
                     </div>

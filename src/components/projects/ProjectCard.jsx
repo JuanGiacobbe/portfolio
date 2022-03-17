@@ -1,5 +1,7 @@
-import React from 'react';
+// importing styles
 import './project-card.css';
+
+// importing assets
 import img1 from '../../assets/img1.png';
 
 export default function ProjectCard() {
@@ -10,8 +12,9 @@ export default function ProjectCard() {
             <p className='pro-des'>lorem lorem lorem lorem
             lorem lorem lorem lorem
             lorem lorem</p>
+
             <div className='pro-links'>
-                <button className="pro-link">Open in github</button>
+                <a href='github.com/JuanGiacobbe' target='_blank' className="pro-link btn">View on github</a>
             </div>
         </div>
     );

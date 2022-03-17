@@ -1,24 +1,22 @@
 .skill-grid {
     display:  grid;
-    grid-template-columns: 33% 33% 33%;
-    width: 50vw;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 60%;
+    grid-gap: 2rem;
 }
 
 .skills-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 25px;
 }
 
 
 .skills-icon {
-    color: var(--rose);
+    color: var(--red);
     font-size: 4.5rem;
     cursor: pointer;
-    transition: all .7s ease;
+    transition: var(--lg-transition);
 }
+
 .skills-icon:hover {
     transform: scale(1.2);
 }
@@ -38,10 +36,8 @@
     color: var(--btn);
 }
 .git:hover {
-    color: var(--red);
+    color: #e32619;
 }
-
-
 
 
 .skills-box p {

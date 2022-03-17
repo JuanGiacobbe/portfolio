@@ -2,30 +2,19 @@
 	display: flex;
 	flex-direction: row;
 	margin-top: 1rem;
+	gap: .2rem;
 }
-
 
 .cv-btn {
-	color: var(--white);
-	border: 2px solid var(--dark-green);
-	background-color: var(--dark-green);
-	margin-right: 5%;
-}
-.cv-btn:hover {
-	background-color: var(--background);
-	color: var(--white);
-	border-color: var(--lightblue);
-}
-
-.contact-btn {
 	color: var(--lightblue);
 	border: 2px solid var(--lightblue);
 	background-color: none;
 	margin-right: 5%;
 }
 
-.contact-btn:hover {
+.cv-btn:hover {
 	background-color: var(--dark-green);
 	color: var(--white);
-	border-color: var(--dark-green);
+	border-color: var(--background);
 }
+

@@ -1,17 +1,11 @@
 .skills {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: auto;
     flex-direction: column;
-    padding-top: 2rem;
+    padding: 5rem 0;
     width: 100vw;
 }
 
 .skills-container {
     padding: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }

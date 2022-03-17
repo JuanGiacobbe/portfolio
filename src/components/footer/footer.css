@@ -7,7 +7,7 @@
 	width: 100vw;
 	position: absolute;
 	z-index: 999;
-	background-color: var(--black);
+	background-color: var(--navbar-bg);
 }
 
 .footer-content {
